@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "OncoApp: npm start",
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": []
+    },
+    {
+      "label": "OncoApp: npm test",
+      "type": "npm",
+      "script": "test",
+      "problemMatcher": []
+    }
+  ]
+}

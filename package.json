@@ -1,0 +1,10 @@
+{
+  "name": "oncoapp",
+  "version": "1.0.0",
+  "description": "Basit onkoloji takip paneli",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}
