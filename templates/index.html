@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OncoApp</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>OncoApp - Onkoloji Takip Paneli</h1>
+        <p>Hastaları ekle, izle ve yaklaşan kontrolleri kaçırma.</p>
+      </header>
+
+      <section class="card">
+        <h2>Yeni Hasta Ekle</h2>
+        <form id="patientForm">
+          <div class="grid">
+            <label>Ad Soyad <input name="name" required /></label>
+            <label>Kanser Türü <input name="cancer_type" required /></label>
+            <label>Evre <input name="stage" placeholder="Örn: IIA" required /></label>
+            <label>Son Kontrol <input name="last_checkup" type="date" required /></label>
+          </div>
+          <label>Tedavi Planı <textarea name="treatment_plan" rows="3" required></textarea></label>
+          <button type="submit">Kaydet</button>
+        </form>
+        <p id="message"></p>
+      </section>
+
+      <section class="card">
+        <h2>Hasta Listesi</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Ad</th>
+              <th>Kanser Türü</th>
+              <th>Evre</th>
+              <th>Son Kontrol</th>
+              <th>Tedavi Planı</th>
+            </tr>
+          </thead>
+          <tbody id="patientRows"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
